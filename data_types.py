@@ -25,3 +25,7 @@ num = 12.999911
 print(f'{num:.3f}')
 
 print(math.floor(num))
+
+bgn_amount = float(input())
+usd_amount = bgn_amount * 1.78991
+print(usd_amount)
