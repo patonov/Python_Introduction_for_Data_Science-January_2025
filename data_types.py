@@ -44,12 +44,26 @@ from math import pi
 
 #print(total_amount)
 
-book_pages = int(input())
-pages_per_hour = int(input())
-days = int(input())
+#book_pages = int(input())
+#pages_per_hour = int(input())
+#days = int(input())
 
-time_needed = book_pages // pages_per_hour
-needed_time_per_day = time_needed // days
+#time_needed = book_pages // pages_per_hour
+#needed_time_per_day = time_needed // days
 
-print(needed_time_per_day)
+#print(needed_time_per_day)
+
+price_of_pens = 5.80
+price_of_markers = 7.20
+price_of_board_cleaner = 1.20
+
+number_of_pens = int(input())
+number_of_markers = int(input())
+number_of_cleaners = int(input())
+discount_rate = int(input())
+
+total_price = number_of_pens * price_of_pens + number_of_markers * price_of_markers + number_of_cleaners * price_of_board_cleaner
+total_price = total_price - total_price * (discount_rate / 100)
+
+print(total_price)
 
