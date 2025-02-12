@@ -21,15 +21,33 @@
 #     for j in range(0, 10):
 #         print(f"{i}{j}")
 
-n = int(input())
-sum = int(0)
-result_string = ""
-for i in range(1, n + 1):
-    sum += i
-    if i == n:
-        result_string += f"{i}" 
-    else:   
-        result_string += f"{i}+"
-else:
-    print(f"{result_string}={sum}")
+# n = int(input())
+# sum = int(0)
+# result_string = ""
+# for i in range(1, n + 1):
+#     sum += i
+#     if i == n:
+#         result_string += f"{i}" 
+#     else:   
+#         result_string += f"{i}+"
+# else:
+#     print(f"{result_string}={sum}")
+
+x = int(0)
+# while x < 10:
+#     print(x)
+#     x += 1
+# else:
+#     print("Oopa")
+
+# while True:
+#     print(f"You can more {x}.")
+#     if x == 20:
+#         break
+#     x += 1
+
+start = int(input())
+while start > 0:
+    print(start)
+    start -= 1
 
