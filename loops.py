@@ -46,8 +46,44 @@ x = int(0)
 #         break
 #     x += 1
 
-start = int(input())
-while start > 0:
-    print(start)
-    start -= 1
+# start = int(input())
+# while start > 0:
+#     print(start)
+#     start -= 1
+
+# count = int(input())
+
+# max_number = float("-inf")
+
+# for _ in range(count) :
+#     num = int(input())
+    
+#     if num > max_number:
+#         max_number = num
+
+# print(f"The max number is {max_number}.")
+
+number = int(input())
+
+temp = number
+is_special = True
+
+while temp > 0:
+    digit = temp % 10
+
+    if digit == 0 or number % digit != 0:
+        is_special = False
+        break
+
+    temp //= 10
+
+if is_special == True:
+    print("Number is special.")
+else:
+    print("Try again later.")
+
+
+
+
+
 
