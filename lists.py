@@ -23,35 +23,78 @@
 # my_list = list(my_string)
 # print(my_list)
 
-vegetables = ["carrot", "cucumber", "pumpkin"]
-vegetables.append("tomato")
-vegetables.append("tomato")
-vegetables.append("tomato")
-vegetables.append("tomato")
+# vegetables = ["carrot", "cucumber", "pumpkin"]
+# vegetables.append("tomato")
+# vegetables.append("tomato")
+# vegetables.append("tomato")
+# vegetables.append("tomato")
 
-vegetables.remove("tomato")
-del vegetables[len(vegetables) - 1]
+# vegetables.remove("tomato")
+# del vegetables[len(vegetables) - 1]
 
-# print(vegetables[-1])
-# print(vegetables.count("tomato"))
+# # print(vegetables[-1])
+# # print(vegetables.count("tomato"))
 
-# for index, value in enumerate(vegetables):
-#     print(f"{index} => {value}")
+# # for index, value in enumerate(vegetables):
+# #     print(f"{index} => {value}")
 
-# for index in range(len(vegetables) - 1, -1, -1):    
-#     print(f"Going to delete {vegetables[index]}")
-#     vegetables.remove(vegetables[index])
-#     print(vegetables)
+# # for index in range(len(vegetables) - 1, -1, -1):    
+# #     print(f"Going to delete {vegetables[index]}")
+# #     vegetables.remove(vegetables[index])
+# #     print(vegetables)
 
-while "tomato" in vegetables:
-    vegetables.remove("tomato")
+# while "tomato" in vegetables:
+#     vegetables.remove("tomato")
 
-vegetables.sort(reverse=True)
-print(vegetables)
-print(vegetables.pop())
+# vegetables.sort(reverse=True)
+# print(vegetables)
+# print(vegetables.pop())
 
-vegetables.insert(1, "potato")
-vegetables[::-1] #vegetables.reverse()
-print(vegetables)
+# vegetables.insert(1, "potato")
+# vegetables[::-1] #vegetables.reverse()
+# print(vegetables)
 
+# tail = input()
+# body = input()
+# head = input()
+
+# zoo_list = [head, body, tail]
+
+# print(zoo_list)
+
+# num_of_courses = int(input())
+# courses = []
+
+# for i in range(0, num_of_courses):
+#     courses.append(input())
+
+# print(courses)
+
+# count = int(input())
+# positive_numbers = []
+# negative_numbers = []
+
+# for i in range(0, count):
+#     number = int(input())
+#     if number >= 0:
+#         positive_numbers.append(number)
+#     else:
+#         negative_numbers.append(number)
+
+# print(f"The count of the positive numbers is {len(positive_numbers)}")
+# print(f"The sum of the negative numbers is {sum(negative_numbers)}")
+
+
+count = int(input())
+searched_word = input()
+all_strings = []
+filltered_strings = []
+
+for i in range(0, count):
+    word = input()
+    all_strings.append(word)
+    if searched_word in word:
+        filltered_strings.append(word)
+
+print(filltered_strings)
 
