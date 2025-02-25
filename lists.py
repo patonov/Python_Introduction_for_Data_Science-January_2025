@@ -85,16 +85,66 @@
 # print(f"The sum of the negative numbers is {sum(negative_numbers)}")
 
 
-count = int(input())
-searched_word = input()
-all_strings = []
-filltered_strings = []
+# count = int(input())
+# searched_word = input()
+# all_strings = []
+# filltered_strings = []
 
-for i in range(0, count):
-    word = input()
-    all_strings.append(word)
-    if searched_word in word:
-        filltered_strings.append(word)
+# for i in range(0, count):
+#     word = input()
+#     all_strings.append(word)
+#     if searched_word in word:
+#         filltered_strings.append(word)
 
-print(filltered_strings)
+# print(filltered_strings)
+
+# count = int(input())
+
+# filltered_nums = []
+# all_nums = []
+
+# for i in range(0, count):
+#     num = int(input())
+#     all_nums.append(num)
+
+# command = input()
+# if command == "even":
+#     filltered_nums = [num for num in all_nums if num % 2 == 0 ]
+# if command == "odd":
+#     filltered_nums = [num for num in all_nums if num % 2 != 0 ]
+# if command == "positive":
+#     filltered_nums = [num for num in all_nums if num >= 0 ]
+# if command == "positive":
+#     filltered_nums = [num for num in all_nums if num < 0 ]
+
+# print(filltered_nums)
+
+
+class Person:
+    age = 18
+    residence = "Pleven"
+    number_of_instances = 0
+
+    def __init__(self, name: str, salary: int):
+        self.name = name
+        self.salary = salary
+        Person.number_of_instances += 1
+
+
+person = Person("Nikolay", 1011)
+
+print(person.name)
+print(person.salary)
+print(Person.number_of_instances)
+
+print(person.residence)
+print(person.age)
+
+pesho_persona = Person("Pesho", 2021)
+print(Person.number_of_instances)
+
+misho_persona = Person("Misho", 2221)
+misho_persona.favorite_song = "Ochi, ochi" #very bad practice!
+print(Person.number_of_instances)
+print(misho_persona.favorite_song)
 
