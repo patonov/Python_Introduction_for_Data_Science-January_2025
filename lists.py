@@ -120,31 +120,51 @@
 # print(filltered_nums)
 
 
-class Person:
-    age = 18
-    residence = "Pleven"
-    number_of_instances = 0
+# class Person:
+#     age = 18
+#     residence = "Pleven"
+#     number_of_instances = 0
 
-    def __init__(self, name: str, salary: int):
-        self.name = name
-        self.salary = salary
-        Person.number_of_instances += 1
+#     def __init__(self, name: str, salary: int):
+#         self.name = name
+#         self.salary = salary
+#         Person.number_of_instances += 1
 
 
-person = Person("Nikolay", 1011)
+# person = Person("Nikolay", 1011)
 
-print(person.name)
-print(person.salary)
-print(Person.number_of_instances)
+# print(person.name)
+# print(person.salary)
+# print(Person.number_of_instances)
 
-print(person.residence)
-print(person.age)
+# print(person.residence)
+# print(person.age)
 
-pesho_persona = Person("Pesho", 2021)
-print(Person.number_of_instances)
+# pesho_persona = Person("Pesho", 2021)
+# print(Person.number_of_instances)
 
-misho_persona = Person("Misho", 2221)
-misho_persona.favorite_song = "Ochi, ochi" #very bad practice!
-print(Person.number_of_instances)
-print(misho_persona.favorite_song)
+# misho_persona = Person("Misho", 2221)
+# misho_persona.favorite_song = "Ochi, ochi" #very bad practice!
+# print(Person.number_of_instances)
+# print(misho_persona.favorite_song)
 
+# list_of_numbers = input().split()
+# opposite_numbers = []
+
+# for num in list_of_numbers:
+#     opposite_number = -int(num)
+#     opposite_numbers.append(opposite_number)
+
+# print(opposite_numbers)
+
+def invert_values(nums: list[str]) -> list[int]:
+    opposite_numbers = []
+
+    for num in nums:
+        opposite_number = -int(num)
+        opposite_numbers.append(opposite_number)
+    
+    return opposite_numbers
+
+list_of_numbers = input().split()
+print(invert_values(list_of_numbers))
