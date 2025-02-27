@@ -157,14 +157,32 @@
 
 # print(opposite_numbers)
 
-def invert_values(nums: list[str]) -> list[int]:
-    opposite_numbers = []
+# def invert_values(nums: list[str]) -> list[int]:
+#     opposite_numbers = []
 
-    for num in nums:
-        opposite_number = -int(num)
-        opposite_numbers.append(opposite_number)
+#     for num in nums:
+#         opposite_number = -int(num)
+#         opposite_numbers.append(opposite_number)
     
-    return opposite_numbers
+#     return opposite_numbers
 
-list_of_numbers = input().split()
-print(invert_values(list_of_numbers))
+# list_of_numbers = input().split()
+# print(invert_values(list_of_numbers))
+
+# input_list = input().split()
+
+# doubled_list = list(map(lambda x: int(x) * 2, input_list))
+# casted_list = list(map(lambda x: int(x), input_list))
+
+# print(doubled_list)
+
+# filtered_list = [num for num in casted_list if num % 2 == 0]
+# print(filtered_list)
+
+# nums = [1, 2, 3]
+# nums[0], nums[1], nums[2] = nums[2], nums[1], nums[0]
+# print(nums)
+
+mixed_nums = [1, 1, 3, 2, 1, 5, 6]
+unique_nums = set(mixed_nums)
+print(unique_nums)
