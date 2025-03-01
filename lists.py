@@ -183,6 +183,23 @@
 # nums[0], nums[1], nums[2] = nums[2], nums[1], nums[0]
 # print(nums)
 
-mixed_nums = [1, 1, 3, 2, 1, 5, 6]
-unique_nums = set(mixed_nums)
-print(unique_nums)
+# mixed_nums = [1, 1, 3, 2, 1, 5, 6]
+# unique_nums = set(mixed_nums)
+# print(unique_nums)
+
+# from functools import reduce
+
+# nums_to_reduce = [1, 1, 3, 2, 1, 5, 6]
+# sum = reduce(lambda x, y: x + y, nums_to_reduce)
+# print(sum)
+# print("proud of being Js disciple...")
+
+# print(f"The max value here is: {reduce(lambda a, b: a if a > b else b, nums_to_reduce)}")
+
+# words = input().split()
+# pallindromes = [word for word in words if word == word[::-1]]
+# print(pallindromes)
+
+names_unsorted = input().split()
+names = list(sorted(names_unsorted, key= lambda name: (-len(name), name)))
+print(names)
